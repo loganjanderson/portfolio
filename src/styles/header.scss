@@ -1,0 +1,30 @@
+.header-wrapper {
+  padding: 10px 20px;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  border-bottom: 1px solid $off-white;
+  position: fixed;
+  width: 100%;
+  background-color: $dark-green;
+  z-index: 3;
+
+  h1 {
+    font-family: 'Unbounded', cursive !important;
+    font-size: 3.5em;
+    font-weight: 100;
+  }
+
+  h2 {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 300;
+  }
+
+  a {
+    font-size: 1.5em;
+  }
+}

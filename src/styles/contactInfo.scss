@@ -1,0 +1,56 @@
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+
+  .info {
+    padding-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    a,
+    p {
+      text-align: left;
+      font-family: "Quicksand", sans-serif;
+      color: $off-white;
+      display: flex;
+      text-decoration: none;
+      font-size: 1.5em;
+      margin: 8px 0px;
+      &:hover {
+        color: #f0efeb85 !important;
+        cursor: pointer;
+      }
+    }
+
+    .phone {
+      &:hover {
+        color: $off-white !important;
+        cursor: text;
+      }
+    }
+  }
+  .success-message {
+    width: 90%;
+    height: 9%;
+    position: absolute;
+    bottom: 80%;
+    // right: 24%;
+    background-color: #4ca75e87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0px 2%;
+
+    h1 {
+      font-size: 1em;
+      color: $dark-green;
+    }
+  }
+}

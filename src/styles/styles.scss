@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap');
+
+@import "variables.scss";
+@import "header.scss";
+@import "home.scss";
+@import "project.scss";
+@import "about.scss";
+@import "contactInfo.scss";
+
+h1, h2, p, a {
+  font-family: 'Quicksand', sans-serif;
+}
+.main-container {
+  display: flex;
+  padding-top: 4%;
+
+  
+  .vertical-sidebar {
+    background-color: $dark-green;
+    position: fixed;
+    height: 100vh;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 0px 10px;
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: 300;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .vs-right {
+    right: 0;
+  }
+}
+
+
+
+
+.dark-mode {
+  h1 {
+    font-family: "Quicksand", sans-serif;
+    color: $off-white;
+    margin: 0px;
+  }
+  h2 {
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    color: $off-white;
+    font-size: 1em;
+  }
+
+  a {
+    font-family: "Quicksand", sans-serif;
+
+    color: $off-white;
+    display: flex;
+    text-decoration: none;
+    // font-size: 1.5em;
+    margin: 8px 0px;
+    &:hover {
+      color: #f0efeb85 !important;
+    }
+  }
+
+  p {
+    font-family: "Quicksand", sans-serif;
+    color: $off-white;
+    font-weight: 400;
+  }
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // width: 95%;
+  // height: 92%;
+  // border: 1px solid $off-white;
+}
