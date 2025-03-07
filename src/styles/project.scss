@@ -1,4 +1,5 @@
 .project-wrapper {
+  padding-left: 0.6%;
   align-self: center;
   height: 95%;
   aspect-ratio: 1/1;
@@ -6,23 +7,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  align-self: center;
+  overflow: hidden;
+
   .link {
     width: 96.5%;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     transition: ease-in-out 1s;
-   
-      h2,
-      p {
-        color: $off-white;
-        background-color: #0000007a;
-        text-align: center;
-        width: 100%;
-        padding: 10px 10px;
-      }
- 
+
+    h2,
+    p {
+      color: $off-white;
+      background-color: #000000cc;
+      text-align: center;
+      width: 100%;
+      padding: 10px 10px;
+    }
+
     .project-title {
       font-size: 1.8em;
       font-weight: 500;
@@ -34,7 +37,6 @@
     }
   }
 
-
   @keyframes inAnimation {
     0% {
       opacity: 0;
@@ -45,7 +47,7 @@
       visibility: visible;
     }
   }
-  
+
   @keyframes outAnimation {
     0% {
       opacity: 0;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "variables.scss";
 @import "header.scss";
@@ -8,18 +9,26 @@
 @import "about.scss";
 @import "contactInfo.scss";
 
-h1, h2, p, a {
-  font-family: 'Quicksand', sans-serif;
+h1,
+h2,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
 }
 .main-container {
   display: flex;
-  padding-top: 4%;
+  // padding-top: 4%;
 
-  
   .vertical-sidebar {
-    background-color: $dark-green;
+    background-color: $off-white;
     position: fixed;
     height: 100vh;
+    // margin-top: -50%;
     text-align: center;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -37,41 +46,20 @@ h1, h2, p, a {
   .vs-right {
     right: 0;
   }
-}
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
 
-
-
-.dark-mode {
-  h1 {
-    font-family: "Quicksand", sans-serif;
-    color: $off-white;
-    margin: 0px;
-  }
-  h2 {
-    margin: 0px;
-    font-family: "Quicksand", sans-serif;
-    color: $off-white;
-    font-size: 1em;
-  }
-
-  a {
-    font-family: "Quicksand", sans-serif;
-
-    color: $off-white;
-    display: flex;
-    text-decoration: none;
-    // font-size: 1.5em;
-    margin: 8px 0px;
-    &:hover {
-      color: #f0efeb85 !important;
+    .vertical-sidebar {
+      order: 2;
+      position: relative;
+      height: 100%;
+      width: 100vw;
+      // margin-top: -50%;
+      text-align: center;
+      writing-mode: horizontal-tb;
+      padding: 0px;
     }
-  }
-
-  p {
-    font-family: "Quicksand", sans-serif;
-    color: $off-white;
-    font-weight: 400;
   }
 }
 
@@ -79,7 +67,4 @@ h1, h2, p, a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // width: 95%;
-  // height: 92%;
-  // border: 1px solid $off-white;
 }
