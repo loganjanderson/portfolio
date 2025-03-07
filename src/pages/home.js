@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Project from "../compontents/project";
 import About from "./about";
 
-import Dots from "../images/bubbles.png";
+import BackgroundImage from "../images/background-image.jpg";
 import ContactInfo from "./contactInfo";
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
       <div
         className="catch-line"
         style={{
-          backgroundImage: `url(${Dots}`,
+          backgroundImage: `url(${BackgroundImage}`,
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
